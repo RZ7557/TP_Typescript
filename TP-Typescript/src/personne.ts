@@ -4,7 +4,7 @@ class Personne{
     nom : string ;
     age : number ;
     
-    constructor(numero: number = 0, prenom : string = "?" , nom : string = "?", age : number = 0){
+    constructor(numero: number = 0, prenom : string = "" , nom : string = "", age : number = 0){
         this.numero =numero;
         this.prenom = prenom;
         this.nom = nom;
@@ -20,7 +20,7 @@ class Personne{
 let p0 = new Personne(2, 'ramzi', 'hammed', 30);
 console.log(p0);
 let p1 : Personne  = new Personne();
-p1.nom = 'Rachid';
+p1.nom = 'kamel';
 p1.prenom = 'zine';
 p1.age =33;
 p1.incrementerAge();
